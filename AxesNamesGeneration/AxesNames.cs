@@ -7,29 +7,6 @@ namespace AxesNamesGeneration
 {
     public class AxesNames
     {
-        static void Main(string[] args)
-        {
-/*
-            string csvPath = @"C:\Users\Настя\Desktop\axesName.csv";
-            string[] allLines;
-            allLines = System.IO.File.ReadAllLines(csvPath, Encoding.Default);
-
-            var names = new List<string>();
-
-            foreach (string line in allLines)
-            {
-                string id = line.Split(';')[0];
-                string floor = line.Split(';')[1];
-                int floorNum = int.Parse(floor);
-                names.Add(GenerateAxesName(id, floorNum));
-
-            }
-            names.ToList().ForEach(i => Console.WriteLine(i.ToString()));
-*/
-        }
-
-
-
         /// <summary>
         /// Выдает название файла осей
         /// </summary>
