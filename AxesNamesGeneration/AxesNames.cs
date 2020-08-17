@@ -8,7 +8,7 @@ using System.Text;
 namespace AxesNamesGeneration
 {
    
-    public class AxesNames
+    public static class AxesNames
     {
         /// <summary>
         /// Выдает название файла осей
