@@ -17,15 +17,11 @@ namespace AxesNamesGeneration
         /// <param name="classType">Комфорт или Стандарт класс</param>
         /// <returns></returns>
         /// 
-
-        
-
         public static string GetAxes(HBlock hb, string classType)
         {
-            string axesName = string.Empty;
-
+            string axesName;
             if (!String.IsNullOrEmpty(classType) && classType == "Стандарт")
-                axesName = AxesNames.GenerateAxesName(hb);
+                axesName = AxesNames.GenerateStandardAxesName(hb);
             else
                 axesName = AxesNames.GenerateComfortAxesName(hb);
        
@@ -74,7 +70,7 @@ namespace AxesNamesGeneration
 
 
 
-        public static string GenerateAxesName(HBlock hb)
+        private static string GenerateStandardAxesName(HBlock hb)
         {
             string hblockId = hb.Id;
             int floor = hb.StoreyNum;
@@ -99,6 +95,7 @@ namespace AxesNamesGeneration
             return axesName;
 
         }
+
         private static int RoundFloorNumber(int floor)
         {
             int stFloor = 0;
